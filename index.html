@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ege'nin Web Sayfası</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font ekliyoruz -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="profil-karti">
+        <div class="profil-baslik">
+            <div class="avatar">
+                <span>EE</span>
+            </div>
+            <h1>Ege Ereren</h1>
+            <p class="unvan">Kanuni Sultan Süleyman Ortaokulu - 6 I</p>
+        </div>
+        <div class="profil-icerik">
+            
+            <div class="hobi-baslik">
+                <span class="emoji">🖥️</span>
+                <h2>Alan Adı Uzantıları</h2>
+            </div>
+            <ul>
+                <li class="accordion">
+                    <div class="accordion-header">
+                        🌐 Temel Alan Adı Uzantıları
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <ul class="alt-liste">
+                        <li>.com - Ticari web siteleri için (Commercial)</li>
+                        <li>.edu - Eğitim kurumları için (Education)</li>
+                        <li>.gov - Resmi kurumlar için (Government)</li>
+                        <li>.org - Kar amacı gütmeyen kuruluşlar için (Organization)</li>
+                        <li>.net - Network ve teknoloji şirketleri için</li>
+                    </ul>
+                </li>
+                <li class="accordion">
+                    <div class="accordion-header">
+                        🔗 Diğer Alan Adı Uzantıları
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <ul class="alt-liste">
+                        <li>.info - Bilgi siteleri için (Information)</li>
+                        <li>.biz - İşletmeler için (Business)</li>
+                        <li>.me - Kişisel web siteleri için (Personal)</li>
+                        <li>.name - Kişisel isimler için (Personal Names)</li>
+                        <li>.pro - Profesyonel hizmetler için (Professional)</li>
+                        <li>.xyz - Genel amaçlı, yenilikçi projeler için (General Purpose)</li>
+                    </ul>
+                </li>
+                <li class="accordion">
+                    <div class="accordion-header">
+                        🌍 Ülkelere Özel Alan Adları
+                        <span class="toggle-icon">▼</span>
+                    </div>
+                    <ul class="alt-liste">
+                        <li>.tr - Türkiye</li>
+                        <li>.uk - Birleşik Krallık</li>
+                        <li>.de - Almanya</li>
+                        <li>.fr - Fransa</li>
+                        <li>.jp - Japonya</li>
+                        <li>.ru - Rusya</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', function() {
+                const accordion = this.parentElement;
+                accordion.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html> 

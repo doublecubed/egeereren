@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profil-karti {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.profil-karti:hover {
+    transform: translateY(-5px);
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar span {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.profil-baslik {
+    text-align: center;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profil-baslik h1 {
+    margin: 0;
+    color: #2d3748;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.unvan {
+    color: #718096;
+    margin: 8px 0 0 0;
+    font-size: 20px;
+}
+
+.profil-icerik {
+    color: #4a5568;
+    line-height: 1.6;
+}
+
+.hobi-baslik {
+    display: flex;
+    align-items: center;
+    margin: 20px 0 10px;
+}
+
+.hobi-baslik h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #2d3748;
+}
+
+.emoji {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.profil-icerik ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profil-icerik li {
+    margin: 12px 0;
+    padding: 10px 15px;
+    background-color: #f7fafc;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+
+.profil-icerik li:hover {
+    transform: translateX(5px);
+    background-color: #edf2f7;
+}
+
+.profil-icerik .alt-liste {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+.profil-icerik .alt-liste li {
+    background-color: #f0f4f8;
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+.profil-icerik .alt-liste li:hover {
+    transform: translateX(3px);
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+}
+
+.toggle-icon {
+    transition: transform 0.3s ease;
+}
+
+.accordion.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.alt-liste {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.accordion.active .alt-liste {
+    max-height: 500px; /* Yeterince büyük bir değer */
+} 
